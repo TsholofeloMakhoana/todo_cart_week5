@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Dashboard from './Dashboard';
+import Dashboard from './Home/Dashboard';
 
 function Login() {
  
@@ -9,7 +9,6 @@ function Login() {
 	 const [flag, setFlag] = useState(false); 
 	 const [dashboard, setDashboard] = useState(true);
 	
-	 
  
 	 function handleLogin(e) {
 		 e.preventDefault();
@@ -30,9 +29,7 @@ function Login() {
 	 }
 
 
-
-
-        return (
+return (
             <div>
 				
          <ol class="breadcrumb">

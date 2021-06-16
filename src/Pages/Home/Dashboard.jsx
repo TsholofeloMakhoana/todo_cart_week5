@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router';
-import Footer from './navbar/Footer';
-import SideBar from './navbar/SideBar';
+import Footer from '../navbar/Footer';
+import SideBar from '../navbar/SideBar';
 
 
 function Dashboard({auth})  {
@@ -9,7 +9,6 @@ function Dashboard({auth})  {
 if (!auth){
     return <Redirect to="/Login"/>
 }
-
 return (
           
         <div>   
