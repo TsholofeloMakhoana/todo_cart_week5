@@ -14,9 +14,10 @@ function App(){
               
                 <Route path="/Registration" component={Registration} />
                 <Route path="/Login" component={Login} />
-               <TodoContextProvider>
+               <TodoContextProvider> 
+                <Route path='/Dashboard' component={Dashboard} /> 
                 <Route path="/ToDoCart" component={() => <ToDoCart auth={true}/>} />
-                <Route path='/Dashboard' component={() =><Dashboard auth={true} /> } /> 
+              
                </TodoContextProvider>
                                 
             </Switch>
