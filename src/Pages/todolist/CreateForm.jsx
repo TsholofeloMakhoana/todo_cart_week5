@@ -39,7 +39,7 @@ function CreateForm() {
 					</div>
 					<div class="form-group">
 						<label>In Progress</label>						
-                        <select class="form-control" name="priority" id="priority" value={inProgress} onChange = { (e) => onInputChange(e)} required>
+                        <select class="form-control" name="inProgress" id="inProgress" value={inProgress} onChange = { (e) => onInputChange(e)} required>
                              <option value="InProgress">InProgress</option>
                              <option value="Pending">Pending</option>
                              <option value="Closed">Closed</option>

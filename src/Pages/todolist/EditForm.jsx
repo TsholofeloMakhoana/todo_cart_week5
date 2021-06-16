@@ -38,11 +38,22 @@ function EditForm  ({todoEdt}) {
 					</div>
 					<div class="form-group">
 						<label>In Progress</label>
-						<input class="form-control" type="text" name="inProgress" value={inProgress} onChange={(e)=> setInProgress(e.target.value)} required/>
+						<select class="form-control" name="inProgress" id="inProgress" value={inProgress} onChange={(e)=> setInProgress(e.target.value)} required>
+                             <option value="InProgress">InProgress</option>
+                             <option value="Pending">Pending</option>
+                             <option value="Closed">Closed</option>
+                             <option value="InCompleted">InCompleted</option>
+                        </select>
+
 					</div>
                  <div class="form-group">
 						<label>Priority</label>
-						<input class="form-control" type="text" name="priority" value={priority}  onChange={(e)=> setPriority(e.target.value)} required/>
+						<select class="form-control" name="priority" id="priority" value={priority} onChange={(e)=> setPriority(e.target.value)} required>
+                             <option value="High">High</option>
+                             <option value="Low">Low</option>
+                             <option value="Medium">Medium</option>
+                             <option value="Hot">Hot</option>
+                        </select>					
 					</div>
 
           <div class="form-group">
